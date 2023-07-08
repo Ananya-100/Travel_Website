@@ -1,0 +1,81 @@
+.destination {
+  margin: 4rem 6rem;
+}
+.destination h1 {
+  font-size: 3rem;
+}
+
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.first-des-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.des-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1rem;
+
+  color: #001c30;
+  font-family: "Times New Roman", Times, serif;
+}
+.des-text h2 {
+  padding: 1 rem;
+  margin: 0.9rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+.image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -99;
+}
+
+.image img {
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+.image img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: -10%;
+}
+
+@media screen and (max-width: 850px) {
+  .destination {
+    margin: 4rem 2rem;
+  }
+  .first-des {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+  .first-des-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+  .des-text {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+  .image img {
+    height: 250px;
+  }
+}
